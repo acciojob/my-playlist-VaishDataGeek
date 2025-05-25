@@ -4,10 +4,100 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	 <title>My Playlist</title>
+  <style>
+     body {
+      background-color: rgb(204, 204, 204);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .playlist-box {
+      border: 1px solid black;
+      width: 800px;
+      margin: 0 auto 20px;
+      padding: 10px;
+      background-color: white;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    a {
+      text-decoration-line: none;
+      color: black;
+    }
+
+    .player_one, .player_two {
+      background-color: rgb(255, 255, 255);
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: fit-content;
+      border: 1px solid black;
+    }
+
+    video {
+      width: 600px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    audio {
+      width: 600px;
+    }
+  </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <h1><b>My Playlist</b></h1>
+
+  <div class="playlist-box">
+    <ul>
+      <li><a href="#">Song 1</a></li>
+      <li><a href="#">Song 2</a></li>
+      <li><a href="#">Song 3</a></li>
+      <li><a href="#">Song 4</a></li>
+      <li><a href="#">Song 5</a></li>
+    </ul>
+  </div>
+
+  <h2><b>Now Playing...</b></h2>
+
+  <div class="player_one">
+    <video controls>
+      <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <h2><b>MP3 songs</b></h2>
+
+  <div class="player_two">
+    <p>Maan Meri Jaan</p>
+    <audio controls>
+      <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
